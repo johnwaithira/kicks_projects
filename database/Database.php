@@ -4,5 +4,9 @@
     
     class Database
     {
-    
+        public function db()
+        {
+            require_once
+            
+        }
     }
