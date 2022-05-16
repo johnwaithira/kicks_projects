@@ -6,15 +6,15 @@
 
     class Database
     {
-        public function db()
+        public function __construct()
         {
-            require_once  dirname(__DIR__)."/vendor/autoload.php";
-            $dotenv = Dotenv::createImmutable(dirname(__DIR__));
-            $dotenv->load();
-            echo  "<pre>";
-            var_dump($_ENV);
-            echo "</pre>";
+            try {
             
+            }
+            catch (\Exception $exception)
+            {
+                echo $exception->getMessage();
+            }
         }
     }
     
