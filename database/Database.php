@@ -11,6 +11,8 @@
     define("DBNAME", $_ENV['DB_NAME']);
     define("DBTYPE", $_ENV['DB_TYPE']);
     define("DBHOST", $_ENV['DB_HOST']);
+    define("DBUSER", $_ENV['DB_USER']);
+    define("DBPWD", $_ENV['DB_PWD']);
     class Database
     {
         public $pdo;
@@ -18,8 +20,8 @@
         {
             
             $dsn = DBTYPE.":host=".DBHOST."; dbname=". DBNAME;
-            $user = "root";
-            $password = "waithira";
+            $user = DBUSER;
+            $password = DBPWD;
     
             try
             {
