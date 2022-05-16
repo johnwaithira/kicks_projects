@@ -10,7 +10,7 @@
     $env->load();
     define("DBNAME", $_ENV['DB_NAME']);
     define("DBTYPE", $_ENV['DB_TYPE']);
-    define("DBHOST, $_ENV['DB_HOST']);
+    define("DBHOST, $_ENV['DB_HOST']");
     class Database
     {
         public $pdo;
