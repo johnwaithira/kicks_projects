@@ -28,6 +28,6 @@
          */
         public static function random($min = 3, int $max)
         {
-            return;rand($min, $max);
+            return rand($min, $max);
         }
     }
