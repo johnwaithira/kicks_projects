@@ -8,7 +8,7 @@
         /**
          * @var string|mixed
          */
-        public string $dns =" 1234";
+        public string $dns = Loader::type();
         
         public function db()
         {

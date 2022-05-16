@@ -6,7 +6,10 @@
 
     class Loader
     {
-        public static function type()
+        /**
+         * @return mixed
+         */
+        public static function type() : string
         {
             require_once  dirname(__DIR__)."/vendor/autoload.php";
             $dotenv = Dotenv::createImmutable(dirname(__DIR__));
