@@ -10,7 +10,6 @@
             
             $dsn = "mysql:host=127.0.0.1; dbname=kicksnairobi";
             $user = "root";
-// $password = "qnmtj420mkrk";
             $password = "waithira";
     
             try
