@@ -18,7 +18,6 @@
         public $pdo;
         public function __construct()
         {
-            
             $dsn = DBTYPE.":host=".DBHOST."; dbname=". DBNAME;
             $user = DBUSER;
             $password = DBPWD;
