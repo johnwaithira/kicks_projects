@@ -28,7 +28,7 @@
          */
         public static function random(
             int $min = 3,
-            int $max)
+            int $max) : int
         {
             return rand($min, $max);
         }
