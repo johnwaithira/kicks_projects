@@ -2,14 +2,19 @@
     
     namespace Waithira\Kicksfootware\database;
  
+    use Dotenv\Dotenv;
+
     class Database
     {
         public function db()
-        {
-            echo Loader::type();
+        {require_once  dirname(__DIR__)."/vendor/autoload.php";
+            $dotenv = Dotenv::createImmutable(dirname(__DIR__));
+            $dotenv->load();
+    
+            return $_ENV;
         }
         
     }
     
     $app = new Database();
-    $app->db();
+    var_dump(    $app->db());
