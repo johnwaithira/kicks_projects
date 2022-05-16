@@ -8,7 +8,7 @@
     class Database
     {
         public $pdo = null;
-        public $dns =
+        public $dns =;
         public function __construct()
         {
             try {
@@ -21,7 +21,7 @@
                 echo $exception->getMessage();
             }
         }
-        public function db()
+        public function db(): array
         {require_once  dirname(__DIR__)."/vendor/autoload.php";
             $dotenv = Dotenv::createImmutable(dirname(__DIR__));
             $dotenv->load();
