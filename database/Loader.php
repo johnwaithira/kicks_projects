@@ -6,8 +6,14 @@
 
     class Loader
     {
-        public static function env()
+        public function __construct()
         {
-           var_dump(Loader::env());
+            try {
+            
+            }
+            catch (\Exception $exception)
+            {
+                echo $exception->getMessage();
+            }
         }
     }
