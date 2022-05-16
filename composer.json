@@ -1,0 +1,17 @@
+{
+    "name": "waithira/kicksfootware",
+    "autoload": {
+        "psr-4": {
+            "Waithira\\Kicksfootware\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "johnwaithira",
+            "email": "waithirajon@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.4"
+    }
+}
