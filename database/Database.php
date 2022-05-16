@@ -22,7 +22,6 @@
             $dsn = DBTYPE.":host=".DBHOST."; dbname=". DBNAME;
             $user = DBUSER;
             $password = DBPWD;
-    
             try
             {
                 $this->pdo = new \PDO($dsn, $user, $password);
