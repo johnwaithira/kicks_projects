@@ -6,7 +6,8 @@
 
    
     require_once dirname(__DIR__)."/../vendor/autoload.php";
-
+    $env = Dotenv::createImmutable(dirname(__DIR__));
+    $env->load();
     class Cipher
     {
         public static function Encrypt($data)
