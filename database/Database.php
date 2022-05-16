@@ -6,6 +6,7 @@
 
     class Database
     {
+        public $pdo = null;
         public function __construct()
         {
             try {
