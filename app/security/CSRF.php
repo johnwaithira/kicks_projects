@@ -13,11 +13,11 @@
         {
             // $token = md5(time() . bin2hex(random_bytes(Random::random(4, 7))));
         
-            var_dump(Random::randomnum(2,6));
+            var_dump(Random::random(2,6));
             exit();
         //    $_SESSION['csrf_token'] = $token;
         
-            echo sprintf("<input name='csrf_token' id='token' value='%s' type= ''>", $token);
+           // echo sprintf("<input name='csrf_token' id='token' value='%s' type= ''>", $token);
         }
     
         /**
