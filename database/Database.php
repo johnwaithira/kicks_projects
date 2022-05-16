@@ -6,6 +6,18 @@
 
     class Database
     {
+        public $pdo = null;
+        
+        public function __construct()
+        {
+            try {
+            
+            }
+            catch (\Exception $exception)
+            {
+                echo $exception->getMessage();
+            }
+        }
         public function db()
         {require_once  dirname(__DIR__)."/vendor/autoload.php";
             $dotenv = Dotenv::createImmutable(dirname(__DIR__));
