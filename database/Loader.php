@@ -6,14 +6,12 @@
 
     class Loader
     {
-        public function __construct()
+        public static function env()
         {
-            try {
+            require_once  dirname(__DIR__)."/vendor/autoload.php";
+            $dotenv = Dotenv::createImmutable(dirname(__DIR__));
+            $dotenv->load();
             
-            }
-            catch (\Exception $exception)
-            {
-                echo $exception->getMessage();
-            }
+            return $_ENV;
         }
     }
