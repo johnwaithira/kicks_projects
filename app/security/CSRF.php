@@ -9,12 +9,16 @@
          * @return void
          * @throws \Exception
          */
+        private Random $random;
+        public function __construct()
+        {
+            
+        }
         public static function csrf_token(): void
         {
             // $token = md5(time() . bin2hex(random_bytes(Random::random(4, 7))));
         
-            var_dump(Random::random(4,10));
-            exit();
+         
         //    $_SESSION['csrf_token'] = $token;
         
            // echo sprintf("<input name='csrf_token' id='token' value='%s' type= ''>", $token);
@@ -31,5 +35,4 @@
     }
     
 
-    $c = new CSRF();
-    $c::csrf_token();
+echo CSRF::csrf_token();
