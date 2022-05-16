@@ -10,7 +10,7 @@
         public function __construct()
         {
             
-            $dsn = "mysql:host=127.0.0.1; dbname=n";
+            $dsn = "mysql:host=localhost; dbname=n";
             $user = "root";
             $password = "waithira";
     
