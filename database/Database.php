@@ -5,10 +5,22 @@
     use Dotenv\Dotenv;
     use PDO;
 
+    require_once  dirname(__DIR__)."/vendor/autoload.php";
+    $dotenv = Dotenv::createImmutable(dirname(__DIR__));
+    $dotenv->load();
+
+    define("TYPE", $_ENV['DB_TYPE']);
+    define("HOST", $_ENV['DB_HOST']);
+    define("NAME", $_ENV['DB_NAME']);
+    define("USER", $_ENV['DB_USER']);
+    define("PWD", $_ENV['DB_PWD']);
     class Database
     {
+        
         public $pdo = null;
-        public $dns =;
+        
+        
+        public $dns  = $this->db()['DB_HOST'];
         public function __construct()
         {
             try {
@@ -21,15 +33,6 @@
                 echo $exception->getMessage();
             }
         }
-        public function db(): array
-        {require_once  dirname(__DIR__)."/vendor/autoload.php";
-            $dotenv = Dotenv::createImmutable(dirname(__DIR__));
-            $dotenv->load();
-    
-            return $_ENV;
-        }
-        
     }
     
-    $app = new Database();
-    var_dump(    $app->db());
+   
