@@ -6,7 +6,7 @@
     {
         public function db()
         {
-            require_once
+            var_dump(__DIR__);
             
         }
     }
