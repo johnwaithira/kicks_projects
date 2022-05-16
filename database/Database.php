@@ -18,7 +18,7 @@
     {
         
         public $pdo = null;
-        public $dns  = TYPE . "host". HOST . ";dbname" . NAME;
+        public $dns  = TYPE . ":host=". HOST . ";dbname=" . NAME;
         public $user  = USER;
         public $pwd = PWD;
         
