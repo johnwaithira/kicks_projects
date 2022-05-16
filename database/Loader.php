@@ -15,7 +15,8 @@
             $dotenv = Dotenv::createImmutable(dirname(__DIR__));
             $dotenv->load();
             
-            return $_ENV['DB_TYPE'];
+            var_dump($_ENV);
+//            return $_ENV['DB_TYPE'];
         }
         public static function host()
         {
@@ -52,4 +53,4 @@
         }
     }
     $app = new Loader();
-    echo  $app::type();
+     $app::type();
