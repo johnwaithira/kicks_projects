@@ -2,6 +2,7 @@
     
     namespace Waithira\Kicksfootware\app\security;
     
+    use Waithira\Kicksfootware\app\security\Random;
     class CSRF
     {
         /**
@@ -24,3 +25,4 @@
             return isset($_SESSION['csrf_token']) && $_SESSION['csrf_token'] == $token;
         }
     }
+    
