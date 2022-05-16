@@ -13,7 +13,7 @@
         {
             // $token = md5(time() . bin2hex(random_bytes(Random::random(4, 7))));
         
-            var_dump(Random::random(2,6));
+            var_dump(Random::random(4,10));
             exit();
         //    $_SESSION['csrf_token'] = $token;
         
