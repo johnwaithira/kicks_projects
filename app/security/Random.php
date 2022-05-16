@@ -23,7 +23,7 @@
     
         /**
          * @param int $min
-         * @param $max
+         * @param int $max
          * @return int
          */
         public static function random(
