@@ -10,3 +10,5 @@
             
         }
     }
+    
+    $app = new Database();
