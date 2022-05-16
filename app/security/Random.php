@@ -20,5 +20,14 @@
             }
             return bin2hex(random_bytes($len));
         }
+    
+        /**
+         * @param $min
+         * @param $max
+         * @return void
+         */
+        public static function range($min = 0, int $max)
+        {
         
+        }
     }
