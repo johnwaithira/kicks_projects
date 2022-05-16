@@ -18,6 +18,7 @@
         {
             // $token = md5(time() . bin2hex(random_bytes(Random::random(4, 7))));
         
+            var_dump(self::$random);
          
         //    $_SESSION['csrf_token'] = $token;
         
@@ -34,5 +35,3 @@
         }
     }
     
-
-echo CSRF::csrf_token();
