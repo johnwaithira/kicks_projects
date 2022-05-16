@@ -18,9 +18,9 @@
     {
         
         public $pdo = null;
-        private $dns  = TYPE . "host". HOST . ";dbname" . NAME;
-        private $user  = USER;
-        private $pwd = PWD;
+        public $dns  = TYPE . "host". HOST . ";dbname" . NAME;
+        public $user  = USER;
+        public $pwd = PWD;
         
         public function __construct()
         {
