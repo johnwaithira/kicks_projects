@@ -7,9 +7,8 @@
    
     require_once dirname(__DIR__)."/../vendor/autoload.php";
     $dir = dirname(__DIR__);
-    var_dump(dirname($dir));
-    // $env = Dotenv::createImmutable(dirname());
-    // $env->load();
+    $env = Dotenv::createImmutable(dirname($dir));
+    $env->load();
 
     var_dump($_ENV);
     class Cipher
