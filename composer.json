@@ -1,5 +1,6 @@
 {
     "name": "waithira/kicksfootware",
+    "description" : "Kicks Nairobi is an e-commerce project for a shop dealing with footware",
     "autoload": {
         "psr-4": {
             "Waithira\\Kicksfootware\\": "./"
