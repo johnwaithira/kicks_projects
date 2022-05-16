@@ -18,8 +18,8 @@
             {
                 $this->pdo = new \PDO($dsn, $user, $password);
                 $this->pdo->setAttribute(\PDO::ATTR_ERRMODE,\PDO::ERRMODE_EXCEPTION);
-                $pdo->setAttribute(\PDO::ATTR_DEFAULT_FETCH_MODE,\PDO::FETCH_ASSOC);
-                $pdo->setAttribute(\PDO::ATTR_EMULATE_PREPARES,false);
+                $this->pdo->setAttribute(\PDO::ATTR_DEFAULT_FETCH_MODE,\PDO::FETCH_ASSOC);
+                $this->pdo->setAttribute(\PDO::ATTR_EMULATE_PREPARES,false);
             }catch(\Exception $e)
             {
                 echo $e->getMessage();
