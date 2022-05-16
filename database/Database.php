@@ -2,15 +2,19 @@
     
     namespace Waithira\Kicksfootware\database;
  
+    use Dotenv\Dotenv;
     use PDO;
 
+    $env = Dotenv::createImmutable(dirname(__DIR__));
+    $env->load();
+    define("DBNAME", $_ENV['DB_NAME']);
     class Database
     {
         public $pdo;
         public function __construct()
         {
             
-            $dsn = "mysql:host=localhost; dbname=kicksnairobi";
+            $dsn = "mysql:host=localhost; dbname=". DBNAME;
             $user = "root";
             $password = "waithira";
     
