@@ -1,6 +1,12 @@
 <?php
     
     namespace Waithira\Kicksfootware\app\security;
+
+    use Dotenv\Dotenv;
+
+    require_once dirname(__DIR__)."/../vendor/autoload.php";
+    $env = Dotenv::createImmutable(dirname(__DIR__));
+    $env->load();
     
     class Cipher
     {
