@@ -4,5 +4,8 @@
     
     class Loader
     {
-        
+        public function env()
+        {
+            
+        }
     }
