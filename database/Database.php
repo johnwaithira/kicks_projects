@@ -6,7 +6,7 @@
     {
         public function db()
         {
-            var_dump(__DIR__);
+            var_dump(dirname(__DIR__));
             
         }
     }
