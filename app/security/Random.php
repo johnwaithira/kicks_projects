@@ -2,8 +2,7 @@
     
     namespace Waithira\Kicksfootware\app\security;
     
-    use function bin2hex;
-    
+     
     class Random
     {
         /**
@@ -27,9 +26,11 @@
          * @return int
          */
         public static function random(
-            int $min = 3,
-            int $max) : int
+            $min = 3,
+            $max) 
         {
             return rand($min, $max);
         }
     }
+
+    var_dump(Random::random(4,8));
