@@ -9,13 +9,15 @@
     $env = Dotenv::createImmutable(dirname(__DIR__));
     $env->load();
     define("DBNAME", $_ENV['DB_NAME']);
+    define("DBTYPE", $_ENV['DB_TYPE']);
+    define("DBHOST, $_ENV['DB_HOST']);
     class Database
     {
         public $pdo;
         public function __construct()
         {
             
-            $dsn = "mysql:host=localhost; dbname=". DBNAME;
+            $dsn = DBTYPE.":host=".DBHOST."; dbname=". DBNAME;
             $user = "root";
             $password = "waithira";
     
