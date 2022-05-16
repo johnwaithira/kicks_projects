@@ -12,3 +12,4 @@
     }
     
     $app = new Database();
+    $app->db();
