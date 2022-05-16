@@ -52,5 +52,3 @@
             return $_ENV['DB_PWD'];
         }
     }
-    $app = new Loader();
-     $app::type();
