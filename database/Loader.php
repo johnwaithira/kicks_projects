@@ -6,12 +6,12 @@
 
     class Loader
     {
-        public static function host(): array
+        public static function host()
         {
             require_once  dirname(__DIR__)."/vendor/autoload.php";
             $dotenv = Dotenv::createImmutable(dirname(__DIR__));
             $dotenv->load();
             
-            return $_ENV;
+            return $_ENV['DB_HOST'];
         }
     }
