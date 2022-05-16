@@ -9,10 +9,10 @@
          * @return void
          * @throws \Exception
          */
-        private Random $random;
+        public static Random $random;
         public function __construct()
         {
-            
+            self::$random = new Random();
         }
         public static function csrf_token(): void
         {
