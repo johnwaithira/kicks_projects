@@ -3,6 +3,7 @@
     namespace Waithira\Kicksfootware\database;
  
     use Dotenv\Dotenv;
+    use PDO;
 
     class Database
     {
