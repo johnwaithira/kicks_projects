@@ -22,11 +22,11 @@
         }
     
         /**
-         * @param $min
+         * @param int $min
          * @param $max
          * @return int
          */
-        public static function random($min = 3, int $max)
+        public static function random(int $min = 3, int $max)
         {
             return rand($min, $max);
         }
