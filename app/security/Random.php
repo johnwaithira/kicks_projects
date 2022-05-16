@@ -9,7 +9,7 @@
         /**
          * @throws \Exception
          */
-        public static function generator(
+        public static function generate(
             int $len,
             bool $return = true
         )
