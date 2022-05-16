@@ -1,28 +1,18 @@
 <?php
     
     namespace Waithira\Kicksfootware\database;
-    
-    use Dotenv\Dotenv;
     use Waithira\Kicksfootware\database\Loader;
-
+    
     class Database
     {
-        public $pdo = null;
         /**
-         * @var array
+         * @var string|mixed
          */
-        public $dsn = Loader::env()['DB_TYPE'];
-        public function __construct()
+        public string $dns = Loader::type();
+        
+        public function db()
         {
-            try {
-                $this->pdo = new \PDO()
-            }
-            catch (\Exception $exception)
-            {
-                echo $exception->getMessage();
-            }
+            echo $this->dns;
         }
+        
     }
-    
-    $app = new Database();
-    $app->db();

@@ -39,7 +39,7 @@
             return $_ENV['DB_USER'];
         }
     
-        public static function password()
+        public static function password(): mixed
         {
             require_once  dirname(__DIR__)."/vendor/autoload.php";
             $dotenv = Dotenv::createImmutable(dirname(__DIR__));
