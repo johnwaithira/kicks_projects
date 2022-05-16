@@ -24,7 +24,7 @@
         /**
          * @param $min
          * @param $max
-         * @return void
+         * @return int
          */
         public static function random($min = 3, int $max)
         {
