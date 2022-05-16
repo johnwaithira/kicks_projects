@@ -20,11 +20,14 @@
         public $pdo = null;
         
         
-        public $dns  = $this->db()['DB_HOST'];
+        public $dns  = TYPE . "host". HOST . ";dbname" . NAME;
+        public $user  = USER;
+        public $pwd = PWD;
+        
         public function __construct()
         {
             try {
-                $this->pdo = new \PDO($dns, $user, $pwd);
+                $this->pdo = new \PDO($this->dns, $this->user, $this->pwd);
                 $this->pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
                 $this->pdo->setAttribute(\PDO::ATTR_DEFAULT_FETCH_MODE, \PDO::FETCH_ASSOC);
             }
