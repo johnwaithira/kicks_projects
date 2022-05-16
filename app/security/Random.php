@@ -26,7 +26,7 @@
          * @param $max
          * @return void
          */
-        public static function range($min = 0, int $max)
+        public static function random($min = 0, int $max)
         {
         
         }
