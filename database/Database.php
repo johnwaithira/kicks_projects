@@ -38,5 +38,6 @@
     }
     
    $app =  new Database();
+   echo "<pre>";
     var_dump($app);
-   
+   echo "</pre>";
