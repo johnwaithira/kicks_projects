@@ -8,7 +8,7 @@
         /**
          * @var string|mixed
          */
-        public string $dns = Loader::type();
+        public string $dns =" Loader::type()";
         
         public function db()
         {
@@ -16,3 +16,6 @@
         }
         
     }
+    
+    $app = new Database();
+    $app->db();
