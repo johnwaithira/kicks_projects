@@ -37,6 +37,7 @@
     }
     
    $app =  new Database();
-   echo "<pre>";
-    var_dump($app);
-   echo "</pre>";
+    $app->pdo->prepare("SELECT * FROM `products`");
+//   echo "<pre>";
+//    var_dump($app);
+//   echo "</pre>";
