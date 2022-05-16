@@ -9,7 +9,7 @@
          */
         public static function csrf_token(): void
         {
-            $token = Cipher::Encrypt(md5(time()));
+            $token = md5(time());
             $_SESSION['csrf_token'] = $token;
         
             echo sprintf("<input name='csrf_token' id='token' value='%s' type= 'hidden'>", $token);
