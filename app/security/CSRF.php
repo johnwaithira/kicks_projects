@@ -13,14 +13,21 @@
          * @return void
          * @throws \Exception
          */
+        public Cipher $cipher;
+
+        public function __construct()
+        {
+            
+        }
   
         public static function csrf_token(): void
         {
             
 
             $app = new Random();
+
             
-            $token = md5(time() . bin2hex(random_bytes($app::random(2, 9))));
+            $token = ;
         
             $_SESSION['csrf_token'] = $token;
         
