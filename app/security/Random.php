@@ -32,5 +32,3 @@
             return rand($min, $max);
         }
     }
-
-    var_dump(Random::random(4,8));
