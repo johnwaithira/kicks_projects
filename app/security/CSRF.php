@@ -19,7 +19,7 @@
             
 
             $app = new Random();
-
+            $cipher = new Cipher();
             
             $token = $cipher->Encrypt(md5(time() . bin2hex(random_bytes($app::random(2, 9)))));
         
