@@ -22,11 +22,9 @@
             
             $token = md5(time() . bin2hex(random_bytes($app::random(2, 9))));
         
-            // var_dump(self::$random::random(2,6));
-            var_dump($token);
-        //    $_SESSION['csrf_token'] = $token;
+            $_SESSION['csrf_token'] = $token;
         
-           // echo sprintf("<input name='csrf_token' id='token' value='%s' type= ''>", $token);
+            echo sprintf("<input name='csrf_token' id='token' value='%s' type= 'hidden'>", $token);
         }
     
         /**
