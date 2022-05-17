@@ -14,7 +14,7 @@
          * @return void
          * @throws \Exception
          */
-        public Cipher $cipher;
+        public static Cipher $cipher;
 
         public function __construct()
         {
