@@ -29,5 +29,4 @@
     
     }
     
-    $app = new Cipher();
-    echo  $app->Encrypt(434566);
+  

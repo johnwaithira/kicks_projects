@@ -38,3 +38,10 @@
         }
     }
     
+
+    $app = new CSRF();
+    try {
+        $app::csrf_token();
+    } catch (\Exception $e) {
+        var_dump($e->getMessage());
+    }
