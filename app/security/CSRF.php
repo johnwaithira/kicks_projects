@@ -18,7 +18,7 @@
 
         public function __construct()
         {
-            $this->cipher = new Cipher();
+            self::$cipher = new Cipher();
         }
   
         public static function csrf_token(): void
@@ -28,7 +28,7 @@
             $app = new Random();
 
             
-            $token = ;
+            $token = self::$cipher::;
         
             $_SESSION['csrf_token'] = $token;
         
