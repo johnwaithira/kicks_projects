@@ -5,6 +5,8 @@
     require_once dirname(dirname(__DIR__))."/vendor/autoload.php";
 
     use Waithira\Kicksfootware\app\security\Random;
+
+    session_start();
     class CSRF
     {
         /**
