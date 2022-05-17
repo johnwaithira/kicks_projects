@@ -17,7 +17,7 @@
 
         public function __construct()
         {
-            
+            $this->cipher = new Cipher();
         }
   
         public static function csrf_token(): void
