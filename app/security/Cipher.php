@@ -7,7 +7,7 @@
     define("option", 0);
     class Cipher
     {
-        public function Encrypt($data)
+        public static function Encrypt($data)
         {
             return openssl_encrypt($data,
                 ciphering,
@@ -17,7 +17,7 @@
             );
         }
     
-        public function Decrypt($data)
+        public static function Decrypt($data)
         {
             return openssl_decrypt($data,
                 ciphering,
