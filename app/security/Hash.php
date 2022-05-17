@@ -9,6 +9,3 @@
             return md5($data);
         }
     }
-
-    $app = new Hash();
-    echo $app::make(1234);
