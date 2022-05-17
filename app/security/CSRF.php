@@ -37,7 +37,3 @@
         }
     }
     
-$app = new CSRF();
-$app::csrf_token();
-
-var_dump($_SESSION);
