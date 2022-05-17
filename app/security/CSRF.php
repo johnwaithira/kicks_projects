@@ -35,3 +35,5 @@
         }
     }
     
+$app = new CSRF();
+$app::csrf_token();
