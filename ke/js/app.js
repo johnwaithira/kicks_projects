@@ -15,7 +15,14 @@ window.onscroll = ()=>{
     var after = document.querySelector(".after");
 
 
-    if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200 && (document.documentElement.scrollTop ) < product.clientHeight - 400)
+    if(
+        document.body.scrollTop > 200 
+        || 
+        document.documentElement.scrollTop > 200 
+        && 
+        (
+            document.documentElement.scrollTop 
+            ) < product.clientHeight - 400)
     {
         sticker.classList.add("custom_one");
         product.classList.add("custom_two");
@@ -24,7 +31,6 @@ window.onscroll = ()=>{
         sticker.classList.remove("custom_one");
         product.classList.remove("custom_two");
         after.style.display = "block";
-
 
     }
 
