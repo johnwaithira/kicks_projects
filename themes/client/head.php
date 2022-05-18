@@ -3,6 +3,9 @@
 define("BASE", "http://127.0.0.1/kicksfootware/");
 
 require_once dirname(dirname(__DIR__))."/vendor/autoload.php";
+use Dotenv\Dotenv;
+$env = Dotenv::createImmutable(dirname(__DIR__));
+$env->load();
 function base()
 {
     echo BASE;
@@ -20,5 +23,5 @@ function base()
     <link rel="stylesheet" href="http://127.0.0.1/shoetailor/ke/css/style.css">
     <link rel="stylesheet" href="http://127.0.0.1/shoetailor/ke/css/awesome/all.css">
     <link rel="stylesheet" href="http://127.0.0.1/shoetailor/ke/css/awesome/fontawesome.min.css">
-    <script src="<?php base();?>ke/js/app.js"></script>
+    
 </head>
