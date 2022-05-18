@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    // alert();
+
 });
 
 window.onscroll = ()=>{
@@ -13,7 +13,6 @@ window.onscroll = ()=>{
     var sticker = document.querySelector(".stick");
     var product = document.querySelector(".stickproduct");
     var after = document.querySelector(".after");
-
 
     if(
         document.body.scrollTop > 200 
