@@ -53,7 +53,7 @@ removeBlur();
 
 viewOnMapBTN.addEventListener("click", function(){
     
-    xmn.style.animation = " zoom_popup 0.7s";
+    animate();
     map.style.display = "block";
     addBlur();
 });
@@ -69,4 +69,8 @@ function addBlur()
 function removeBlur()
 {
     blur_div.classList.remove("blur");
+}
+function animate()
+{
+    xmn.style.animation = " zoom_popup 0.7s";
 }
