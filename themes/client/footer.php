@@ -4,10 +4,10 @@
         <div class="w-p-90 m-a">
             <div class="display-flex">
                 <div class="col-6">
-
+                    <div class="p-20"></div>
                 </div>
                 <div class="col-6">
-                    
+                    <div class="p-20"></div>
                 </div>
             </div>
         </div>
