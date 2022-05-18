@@ -34,4 +34,6 @@ window.onscroll = ()=>{
 
 }
 
-console.log(window.clientHeight() + "px");
+var map_display = document.querySelector(".map_display");
+
+map_display.style.height = (window.innerHeight - 150) +"px";
