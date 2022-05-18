@@ -49,18 +49,17 @@ map.style.display = "none";
 let xmn = document.querySelector("#viewOnMapdiv");
 let blur_div = document.querySelector(".blur");
 
-blur_div.classList.remove("blur");
+removeBlur();
 
 viewOnMapBTN.addEventListener("click", function(){
     
     xmn.style.animation = " zoom_popup 0.7s";
     map.style.display = "block";
-    
+    addBlur();
 });
 close_map.addEventListener("click", function(){
     map.style.display = "none"; 
-
-
+    removeBlur();
 });
 
 function addBlur()
