@@ -72,5 +72,3 @@
     </nav>
     <hr style="border: 1px solid #f8f8f8">
 </header>
-<script src="http://127.0.0.1/shoetailor/ke/js/jQuery.js"></script>
-<script src="http://127.0.0.1/shoetailor/ke/js/livesearch.js"></script>
