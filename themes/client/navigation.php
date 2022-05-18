@@ -10,7 +10,8 @@
             <input  type="checkbox" name="checkNavBar"  id="checkNavBar">
             <h1 class="logo">
                 <a href="http://127.0.0.1/kicksfootware">
-                    <img src="http://127.0.0.1/shoe/storage/s_files/shoe_footer.png">
+                    <!-- <img src="http://127.0.0.1/shoe/storage/s_files/shoe_footer.png"> -->
+                    <h3>Kicks Nairobi</h3>
                 </a>
             </h1>       
             <div class="nav-items">
@@ -47,7 +48,7 @@
                     
                     <?php 
                         session_start();
-                        if(!isset($_SESSION['kicksuserloggedin']))
+                        if(isset($_SESSION['kicksuserloggedin']))
                         {
                         ?>
                             <button class="bg-inherit"><a href="">Logout</a></button>     
@@ -67,31 +68,7 @@
                 <div class="menu"></div>
             </label>
         </div>
-        <div class="col-12 m-t-5">
-           <form style="" autocomplete="off" action="<?php BASE;?>search/" method="get" id="search_for_products">
-                <div class="search-box w-p-90 m-a">
-                    <div class="input display-flex b-r-5 c-white col-6 m-a" style="background: #f8f8f8;">
-                        <img id="searchsvg" src="<?php BASE;?>kicks_files/svgs/search.svg" class="p-l-19" style="width: 18px !important;" alt="">
-                        <input type="text"  placeholder="search for products, brands and category" style="outline: none; background: transparent; flex: 1;" id="textSearch" name="search" class="b-n w-p-90 p-13-15 m-a"> <button class="p-l-10 p-r-20 b-n f-s-16 c-white f-w-800 b-t-r-r-10 b-b-r-r-10" style="background:  rgb(237, 164, 17); " >Search</button>
-                    </div>
-                    <div style="position:absolute;left: 0; right: 0; " class="col-6 m-a m-t-4 search-suggestion">
-                        <div class="w-p-94 m-a">
-                            <div class="box-shadow1  m-l-10 m-r-10 m-b-10" style="background: #f8f8f8; z-index:1000;">
-                                <div class="product-search p-0-15">
-                                    <div class="results">
-                                        <div class="product-link">
-                                            <div class="result-div">
-                                                <div class="result"></div>
-                                            </div> 
-                                        </div>                                       
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-           </form>
-        </div>
+      
     </nav>
     <hr style="border: 1px solid #f8f8f8">
 </header>
