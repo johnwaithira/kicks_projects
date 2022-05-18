@@ -5,7 +5,6 @@
 </div>
 <header>
     <nav>
-       
         <div class="wrapper">
             <input  type="checkbox" name="checkNavBar"  id="checkNavBar">
             <h1 class="logo">
