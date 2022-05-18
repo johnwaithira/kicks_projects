@@ -1,7 +1,9 @@
 class KicksJS
 {
-    static animation = () => {
+    animation() {
         console.log(12345678);
     };
 }
+
+
 
