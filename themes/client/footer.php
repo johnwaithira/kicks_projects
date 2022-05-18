@@ -4,6 +4,11 @@
         {
             animation: zoom_popup 0.7s
         } */
+
+        .blur
+        {
+            filter: blur(2px);
+        } 
         @keyframes zoom_popup
         {
             0%
