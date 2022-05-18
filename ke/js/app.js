@@ -46,13 +46,23 @@ let close_map = document.querySelector("#close");
 let viewOnMapBTN= document.querySelector("#viewOnMapBTN");
 let map = document.querySelector("#viewOnMap");
 map.style.display = "none";
-
+let xmn = document.querySelector("#viewOnMapdiv");
 
 viewOnMapBTN.addEventListener("click", function(){
-    let xmn = document.querySelector("#viewOnMapdiv");
-    xmn.style.animation = "";
+    
+    xmn.style.animation = " zoom_popup 0.7s";
     map.style.display = "block";
 });
 close_map.addEventListener("click", function(){
     map.style.display = "none";
+    xmn.style.animation = " zoom_popup 0.7s";
+
 });
+
+
+class Kicks_Responsive
+{
+    static function  animation(params) {
+        
+    }
+}
