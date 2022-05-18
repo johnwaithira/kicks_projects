@@ -25,4 +25,4 @@ function base(){echo BASE;}
     <link rel="stylesheet" href="<?php base()?>ke/css/offline/awesome/all.css">
     <link rel="stylesheet" href="<?php base()?>ke/css/offline/awesome/fontawesome.min.css">
 </head>
-<div id="blur">
+<div class="blur">
