@@ -1,6 +1,5 @@
 class KicksJS
 {
-
     constructor() {
     }
     animation() {
@@ -9,6 +8,4 @@ class KicksJS
 }
 
 
-let dev;
-dev = new KicksJS();
-dev::
+let d
