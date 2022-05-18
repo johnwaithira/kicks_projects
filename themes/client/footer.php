@@ -1,3 +1,12 @@
+<div class="map">
+    <div class="map-div">
+        <div class="my-map">
+            <div class="h-200 box-shadow2 w-p-90 m-a">
+
+            </div>
+        </div>
+    </div>
+</div>
 <footer>
     <div class="footer-wrapper bg_update p-b-40 p-t-30">
         <hr class="m-t-20 w-p-90  m-a m-b-29">
