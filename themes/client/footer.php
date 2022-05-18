@@ -7,7 +7,7 @@
 
         .blur
         {
-            filter: blur(2px);
+            filter: blur(4px);
         } 
         @keyframes zoom_popup
         {

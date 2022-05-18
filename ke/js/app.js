@@ -3,13 +3,37 @@ $(document).ready(function(){
 });
 
 window.onscroll = ()=>{
-    var sb, sbd, dbs,i, cY, a,b,c,d,e;
-    sb = document.querySelector("#scroll-btn");
-    sbd = sb.style;sbd.display = "none";
-    dbs = document.body.scrollTop;sb.onclick = () =>{
-    dbs = 0;document.documentElement.scrollTop = 0;}
-    if(dbs > 40 || document.documentElement.scrollTop > 40)
-    {sbd.display = "block";}else{sbd.display = "none";}
+    var 
+        sb, 
+        sbd, 
+        dbs,
+        i, 
+        cY, 
+        a,
+        b,
+        c,
+        d,
+        e;
+    sb = document.querySelector(
+        "#scroll-btn"
+        );
+    sbd = sb.style;
+    sbd.display = "none";
+    dbs = document.body.scrollTop;
+    sb.onclick = () =>{
+    dbs = 0;
+    document.documentElement.scrollTop = 0;}
+    if(
+        dbs > 40 
+        || 
+        document.documentElement.scrollTop > 40)
+    {
+        sbd.display = "block";
+    }
+    else
+    {
+        sbd.display = "none";
+    }
     var sticker = document.querySelector(".stick");
     var product = document.querySelector(".stickproduct");
     var after = document.querySelector(".after");
