@@ -5,6 +5,7 @@
 </div>
 <header>
     <nav>
+       
         <div class="wrapper">
             <input  type="checkbox" name="checkNavBar"  id="checkNavBar">
             <h1 class="logo">
@@ -66,7 +67,7 @@
                 <div class="menu"></div>
             </label>
         </div>
-        <div class="col-12 m-b-5">
+        <div class="col-12 m-t-5">
            <form style="" autocomplete="off" action="<?php BASE;?>search/" method="get" id="search_for_products">
                 <div class="search-box w-p-90 m-a">
                     <div class="input display-flex b-r-5 c-white col-6 m-a" style="background: #f8f8f8;">
