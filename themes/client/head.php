@@ -4,7 +4,7 @@ define("BASE", "http://127.0.0.1/kicksfootware/");
 
 require_once dirname(dirname(__DIR__))."/vendor/autoload.php";
 use Dotenv\Dotenv;
-$env = Dotenv::createImmutable(dirname(__DIR__));
+$env = Dotenv::createImmutable(dirname(dirname(__DIR__)));
 $env->load();
 function base()
 {
