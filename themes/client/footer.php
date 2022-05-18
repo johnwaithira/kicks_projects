@@ -1,8 +1,8 @@
 
 <div class="newsletter">
     <div class="p-20-0">
-        <div class="w-p-85 m-a">
-            
+        <div class="w-p-90 m-a">
+
         </div>
     </div>
 </div>
