@@ -30,7 +30,6 @@ window.onscroll = ()=>{
         sticker.classList.remove("custom_one");
         product.classList.remove("custom_two");
         after.style.display = "block";
-
     }
 
 }
