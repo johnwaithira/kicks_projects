@@ -6,10 +6,9 @@ require_once dirname(dirname(__DIR__))."/vendor/autoload.php";
 use Dotenv\Dotenv;
 $env = Dotenv::createImmutable(dirname(dirname(__DIR__)));
 $env->load();
-function base()
-{
-    echo BASE;
-}
+
+function base(){echo BASE;}
+
 ?>
 
 <!DOCTYPE html>
