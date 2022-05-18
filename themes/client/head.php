@@ -20,8 +20,7 @@ function base()
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kicks Nairobi | Dealers in footwares and lastest sneakers</title>
     <link rel="shortcut icon" href="" type="image/x-icon">
-    <link rel="stylesheet" href="http://127.0.0.1/shoetailor/ke/css/style.css">
-    <link rel="stylesheet" href="http://127.0.0.1/shoetailor/ke/css/awesome/all.css">
-    <link rel="stylesheet" href="http://127.0.0.1/shoetailor/ke/css/awesome/fontawesome.min.css">
-    
+    <link rel="stylesheet" href="<?php base()?>ke/css/offline/style.css">
+    <link rel="stylesheet" href="<?php base()?>ke/css/offline/awesome/all.css">
+    <link rel="stylesheet" href="<?php base()?>ke/css/offline/awesome/fontawesome.min.css">
 </head>
