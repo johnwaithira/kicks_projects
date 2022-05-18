@@ -15,6 +15,9 @@
             </h1>       
             <div class="nav-items">
                <div class="links">
+                   <li>
+                       <img src="http://127.0.0.1/shoetailor/kicks_file" alt="">
+                   </li>
                     <li class="nav-links"><a id="a" href="#">Home</a></li>
                     <li class="nav-links page c-pointer">Pages
                         <div class="pages-dropdown box-shadow1 w-200 p-5-5 m-t-4">
@@ -42,10 +45,6 @@
                             <span class="count">4</span>
                         </a>
                     </li>
-
-                    <div class="search">
-                        <input type="se">
-                    </div>
                </div>
                <div class="link-btns">
                     <?php 
