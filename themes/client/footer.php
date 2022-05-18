@@ -162,7 +162,7 @@
     </div>
 </footer>
 </div>
-<div  class="w-p-100 hide" id="viewOnMap">
+    <div  class="w-p-100 hide" id="viewOnMap">
         <div class=" m-a w-p-100" style="top:50px;position: fixed; z-index: 900; " id="viewOnMapdiv">
             <div class="col-10 m-a">
                 <div class="m-10">
