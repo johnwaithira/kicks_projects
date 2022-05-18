@@ -3,6 +3,10 @@
 define("BASE", "http://127.0.0.1/kicksfootware/");
 
 require_once dirname(dirname(__DIR__))."/vendor/autoload.php";
+function base()
+{
+    echo BASE;
+}
 ?>
 
 <!DOCTYPE html>
@@ -16,4 +20,5 @@ require_once dirname(dirname(__DIR__))."/vendor/autoload.php";
     <link rel="stylesheet" href="http://127.0.0.1/shoetailor/ke/css/style.css">
     <link rel="stylesheet" href="http://127.0.0.1/shoetailor/ke/css/awesome/all.css">
     <link rel="stylesheet" href="http://127.0.0.1/shoetailor/ke/css/awesome/fontawesome.min.css">
+    <script src="<?php base();?>ke/js/app.js"></script>
 </head>
