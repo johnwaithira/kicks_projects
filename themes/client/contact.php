@@ -26,3 +26,9 @@
         </div>
     </div>
 </div>
+
+<script>
+    $(document).ready(function(){
+        $("#textarea").height = "auto";
+    });
+</script>
