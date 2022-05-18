@@ -1,6 +1,10 @@
 
 <div class="newsletter">
-    
+    <div class="p-20-0">
+        <div class="w-p-85 m-a">
+            
+        </div>
+    </div>
 </div>
 <footer>
     <div class="footer-wrapper bg_update p-b-40 p-t-30">
