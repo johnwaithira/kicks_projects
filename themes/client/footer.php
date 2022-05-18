@@ -1,17 +1,21 @@
-<style>
-    .map{
-        position: fixed;
-    }
-</style>
-<div class="map">
-    <div class="map-div">
-        <div class="my-map">
-            <div class="h-200 box-shadow2 w-p-90 m-a">
-
+    <div  class="w-p-100 hide" id="viewOnMap">
+        <div class=" m-a w-p-100" style="top:50px;position: fixed; z-index: 900; ">
+            <div class="col-10 m-a">
+                <div class="m-10">
+                    <div class=" b-white p-20 box-shadow">
+                        <div class="" style="width: 100%;">
+                            <div class="c-pointer " style="display: flex; float:right;" id="close">
+                                <p class="bg_update p-0-12 b-r-100 f-s-30 f-w-900" >&times;</p>
+                            </div>
+                            <div class="">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel consequuntur nemo laboriosam quia fugiat quasi id, suscipit distinctio consequatur reprehenderit atque eos, alias qui minus sit quaerat enim maxime aliquid.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 <footer>
     <div class="footer-wrapper bg_update p-b-40 p-t-30">
         <hr class="m-t-20 w-p-90  m-a m-b-29">
