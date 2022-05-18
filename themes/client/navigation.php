@@ -44,7 +44,6 @@
                     </li>
                </div>
                <div class="link-btns">
-                    
                     <?php 
                         session_start();
                         if(isset($_SESSION['kicksuserloggedin']))
