@@ -49,6 +49,8 @@ map.style.display = "none";
 
 
 viewOnMapBTN.addEventListener("click", function(){
+    let xmn = document.querySelector("#viewOnMapdiv");
+    xmn.style.animation = "";
     map.style.display = "block";
 });
 close_map.addEventListener("click", function(){

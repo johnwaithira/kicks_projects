@@ -1,21 +1,21 @@
     
     <style>
-        #viewOnMapdiv
+        /* #viewOnMapdiv
         {
             animation: zoom_popup 0.7s
-        }
+        } */
         @keyframes zoom_popup
         {
             0%
             {
                 transform: scale(0);
             }
-            45%{
+            35%{
                 transform: scale(1.15);
 
             }
             90%{
-                transform: scale(0.7);
+                transform: scale(0.9);
 
             }
             100%{
