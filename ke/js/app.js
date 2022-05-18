@@ -43,8 +43,13 @@ map_display.style.height = (
     ) +"px";
 
 let close_map = document.querySelector("#close");
-let map = document.querySelector("#map");
+let viewOnMapBTN= document.querySelector("#close");
+let map = document.querySelector("#viewOnMap");
 map.style.display = "none";
+
+viewOnMapBTN.addEventListener("click", function(){
+    
+});
 close_map.addEventListener("click", function(){
     
 });
