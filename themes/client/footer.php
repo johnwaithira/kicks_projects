@@ -6,9 +6,21 @@
         }
         @keyframes zoom_popup
         {
-            from
+            0%
             {
                 transform: scale(0);
+            }
+            45%{
+                transform: scale(1.15);
+
+            }
+            90%{
+                transform: scale(0.7);
+
+            }
+            100%{
+                transform: scale(1);
+
             }
         }
         @keyframes zoom_popup_fade
