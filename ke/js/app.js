@@ -59,10 +59,3 @@ close_map.addEventListener("click", function(){
 
 });
 
-
-class Kicks_Responsive
-{
-    static function  animation(params) {
-        
-    }
-}
