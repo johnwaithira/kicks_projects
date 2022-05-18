@@ -42,6 +42,10 @@
                             <span class="count">4</span>
                         </a>
                     </li>
+
+                    <div class="search">
+                        <input type="se">
+                    </div>
                </div>
                <div class="link-btns">
                     <?php 
