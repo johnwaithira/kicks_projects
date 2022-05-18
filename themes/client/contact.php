@@ -8,9 +8,9 @@
                 <div class="form">
                     <?php
     
-                        use Waithira\Kicksfootware\Templates\Form;
-    
-                        $form = Form::begin('/dev/contact', 'post');
+                    use Waithira\Kicksfootware\Templates\Form;
+                    
+                    $form = Form::begin('/dev/contact', 'post');
                     echo $form::field('name')->placeholder('Enter your name');
                     echo $form::field('email')->placeholder('Enter your email');
                     echo $form::field('number')->value('+254 ')->placeholder('Number');
