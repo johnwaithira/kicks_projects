@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kicks Login</title>
+    <link rel="stylesheet" href="http://127.0.0.1/shoetailor/ke/css/style.css">
+</head>
+<body>
+    <style>
+        #login_form input{
+            box-sizing: border-box;
+        }
+        .prompts a{
+            color: blue !important;
+        }
+        #otp{
+            letter-spacing: 23px;    
+        }
+    </style>
+    <div class="login m-t-20">
+        <div class="login-box p-t-20 m-10">
+            <div class="form col-4 m-a box-shadow1 b-r-2">
+                <div class="form-box p-t-50 p-l-10 p-r-10">
+                    <div class="logo-box w-p-100 text-center">
+                        <img src="http://127.0.0.1/shoe/storage/s_files/shoe_footer.png" style="width: 110px !important;">
+                    </div>
+                    <h1 class="color_fade p-10">Verify OTP</h1>
+                    <form id="login_form" class="m-a p-10-0">
+                        <div class="b-one p-1-15 m-10 b-r-30">
+                            <input type="text" class="f-s-17 outline-none b-n w-p-100 p-10-15 text-center" id="otp" maxlength="6" placeholder="OTP">
+                        </div>
+                        <div class="loginbtn p-10-12">
+                            <button class="p-10-25 bg-inherit b-one">Verify</button>
+                        </div>
+                    </form>
+                    <div class="prompts p-10-15">
+                        <div class="forgot-password p-b-20">
+                            <p>Remember password ?<a href="./login.html" > Login</a></p>
+                        </div>
+                        <hr>
+                        <div class="create-account p-10-0">
+                            <p>Don't have an account ?<a href="./create.html"> Create</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kicks Create Account</title>
+    <link rel="stylesheet" href="http://127.0.0.1/shoetailor/ke/css/style.css">
+</head>
+<body>
+    <style>
+        input{
+            box-sizing: border-box;
+        }
+        .prompts a{
+            color: blue !important;
+        }
+    </style>
+    <header>
+        <nav>
+            <div class="wrapper">
+                <input  type="checkbox" name="checkNavBar"  id="checkNavBar">
+                <h1 class="logo"><a href="http://127.0.0.1/shoe/"><img src="http://127.0.0.1/shoe/storage/s_files/shoe_footer.png"></a></h1>       
+                <div class="nav-items">
+                   <div class="links">
+                        <li class="nav-links"><a id="a" href="#">Home</a></li>
+                        <li class="nav-links page c-pointer">Pages
+                            <div class="pages-dropdown box-shadow1 w-200 p-5-5 m-t-4">
+                                <div class="dropdown">
+                                   <ul>
+                                    <li><a id="a" href="#a">About Us</a></li>
+                                    <li><a id="a" href="#con">Contact Us</a></li>
+                                    <li><a id="a" href="#f">FAQs</a></li>
+                                    <li><a id="a" href="#t">Terms & Conditions</a></li>
+                                    <li><a id="a" href="#p">Products</a></li>
+                                   </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-links"><a id="a" href="#">Shop</a></li>
+                   </div>
+                   <div class="link-btns">
+                        <a href="./login.html"><button class="bg-inherit">Login</button></a>     
+                   </div>
+                </div>
+                <label id="humberger" for="checkNavBar">
+                    <div class="menu"></div>
+                    <div class="menu mid"></div>
+                    <div class="menu"></div>
+                </label>
+            </div>
+        </nav>
+        <hr style="border: 1px solid #f8f8f8">
+    </header>
+    <div class="login m-t-5">
+        <div class="login-box p-t-10 m-10">
+            <div class="form col-4 m-a box-shadow1 b-r-22">
+                <div class="form-box p-t-50 p-l-10 p-r-10">
+                    <div class="logo-box w-p-100 text-center">
+                        <img src="http://127.0.0.1/shoe/storage/s_files/shoe_footer.png" style="width: 110px !important;">
+                    </div>
+                    <h1 class="color_fade p-10">Create</h1>
+                    <form id="form" class="m-a p-10-0">
+                        <p class="p-0-10" id="error_res"></p>
+                        <div class="name-place display-flex p-5-10">
+                            <div class="Firstname col-6 ">
+                                <div class="b-one p-5-15 m-t-10">
+                                    <input type="text" class="b-n outline-none p-10-15 w-p-100" placeholder="Firstname" name="firstname" id="name">
+                                </div>
+                            </div>
+                            <div class="Lastname col-6 ">
+                                 <div class="b-one p-5-15 m-t-10">
+                                    <input type="text" class="b-n outline-none p-10-15 w-p-100" placeholder="Lastname" name="lastname" id="sname">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-one p-5-15 m-10">
+                            <input type="text" name="email" class="f-s-17 outline-none b-n w-p-100 p-10-15" placeholder="Email" id="email">
+                        </div>
+                        <div class="b-one p-5-15 m-10">
+                            <input type="password" name="password" class="f-s-17 outline-none b-n w-p-100 p-10-15" placeholder="Password" id="password">
+                        </div>
+                        <div class=" p-10-12">
+                            <button class="p-10-25 bg-inherit b-one" id="createbtn">Create</button>
+                        </div>
+                    </form>
+                    <div class="prompts p-10-15">
+                        <div class="forgot-password p-b-20">
+                        </div>
+                        <hr>
+                        <div class="create-account p-10-0">
+                            <p>Already have an account ?<a href="./login.html"> Login</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./ke/js/jQuery.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("#form").on("submit", function(e){
+             e.preventDefault();
+          });
+          $("#createbtn").click(function(){
+             let fname, sname, email, passsword;
+
+             fname = $("#name").val();
+             sname = $("#sname").val();
+             email = $("#email").val();
+             password = $("#password").val();
+
+             if(fname == '' || sname == '' || email == '' || passsword == '')
+             {
+                 $("#error_res").html(`<span class="warning">All fields required</span>`);
+                 setTimeout(()=>{
+                    $("#error_res").html("");
+                 }, 3000);
+             }else{
+                $.ajax({
+                    url: "./client/php/create.php",
+                    type: "post",
+                    data :{
+                        firstname : fname,
+                        secondname : sname,
+                        email : email,
+                        password :password 
+                    },
+                    success : function(res)
+                    {
+                        alert(res)
+                    }
+                 });
+             }
+
+             
+          });
+        });
+    </script>
+</body>
+</html>
