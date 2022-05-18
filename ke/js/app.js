@@ -47,7 +47,7 @@ let viewOnMapBTN= document.querySelector("#viewOnMapBTN");
 let map = document.querySelector("#viewOnMap");
 map.style.display = "none";
 let xmn = document.querySelector("#viewOnMapdiv");
-let blur_div = document.querySelector("#blur");
+let blur_div = document.querySelector(".blur");
 
 blur_div.classList.remove("blur");
 
@@ -59,5 +59,15 @@ viewOnMapBTN.addEventListener("click", function(){
 });
 close_map.addEventListener("click", function(){
     map.style.display = "none"; 
+
+
 });
 
+function addBlur()
+{
+    blur_div.classList.add("blur");
+}
+function removeBlur()
+{
+    blur_div.classList.remove("blur");
+}
