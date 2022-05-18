@@ -7,7 +7,11 @@
     <nav>
         <div class="wrapper">
             <input  type="checkbox" name="checkNavBar"  id="checkNavBar">
-            <h1 class="logo"><a href="http://127.0.0.1/shoe/"><img src="http://127.0.0.1/shoe/storage/s_files/shoe_footer.png"></a></h1>       
+            <h1 class="logo">
+                <a href="http://127.0.0.1/kicksfootware">
+                    <img src="http://127.0.0.1/shoe/storage/s_files/shoe_footer.png">
+                </a>
+            </h1>       
             <div class="nav-items">
                <div class="links">
                     <li class="nav-links"><a id="a" href="#">Home</a></li>
