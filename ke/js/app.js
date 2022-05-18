@@ -54,9 +54,7 @@ viewOnMapBTN.addEventListener("click", function(){
     map.style.display = "block";
 });
 close_map.addEventListener("click", function(){
-    // map.style.display = "none";
-    xmn.style.animation = " zoom_popup_fade 0.7s";
-    
+    map.style.display = "none"; 
 
 });
 
