@@ -7,7 +7,6 @@
             <div class="contact-form">
                 <div class="form">
                     <?php
-    
                     use Waithira\Kicksfootware\Templates\Form;
                     
                     $form = Form::begin('/dev/contact', 'post');
