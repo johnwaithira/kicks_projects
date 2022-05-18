@@ -2,6 +2,7 @@
     
     namespace Waithira\Kicksfootware\Templates;
     use Waithira\Kicksfootware\Templates\Fields;
+    
     class Form
     {
         public static function begin($action, $method, $params = []): Form
