@@ -8,6 +8,7 @@ $env->load();
 
 
 define("BASE", $_ENV['APP_URI']);
+
 function base(){echo BASE;}
 
 ?>
