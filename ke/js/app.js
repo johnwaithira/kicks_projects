@@ -53,7 +53,7 @@ viewOnMapBTN.addEventListener("click", function(){
     
     xmn.style.animation = " zoom_popup 0.7s";
     map.style.display = "block";
-    blur_div.style.display = "none";
+    blur_div.classList.add(".blure");
 });
 close_map.addEventListener("click", function(){
     map.style.display = "none"; 
