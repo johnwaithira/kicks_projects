@@ -459,7 +459,6 @@ ul li a:hover{
 .flex-wrap{
     flex-wrap: wrap;
 }
-
 @media (min-width:992px){
     .page:hover .pages-dropdown{
         display: block  !important;
