@@ -24,7 +24,7 @@
                                 </div>
                                 <div class="view_on_map">
                                     <div class="m-t-35">
-                                        <button class="bg_red b-n p-17-32 b-r-4 f-s-13 c-white">
+                                        <button class="bg_red b-n p-17-32 b-r-4 f-s-13 c-white display-flex" style="text-align:center;">
                                         <img src="http://127.0.0.1/shoetailor/kicks_files/svgs/location.svg" class="w-20">    
                                         View On Map
                                         </button>
