@@ -46,15 +46,15 @@
                     
                     <?php 
                         session_start();
-                        if(isset($_SESSION['kicksuserlogin']))
+                        if(!isset($_SESSION['kicksuserloggedin']))
                         {
                         ?>
                             <button class="bg-inherit"><a href="">Logout</a></button>     
                         <?php
                         }else{
                         ?>
-        <button class="bg-inherit"><a href="" >Login</a></button>
-                            <button class="bg-inherit"><a href="">Create Acc</a></button>     
+                            <a href="" ><button class="bg-inherit">Login</button></a>
+                            <a href=""><button class="bg-inherit">Create Acc</button></a>     
                         <?php
                         }
                     ?>       
