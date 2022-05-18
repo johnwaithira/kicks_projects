@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    
+
 });
 
 window.onscroll = ()=>{
@@ -33,3 +33,5 @@ window.onscroll = ()=>{
     }
 
 }
+
+console.log(window.clientHeight() + "px");

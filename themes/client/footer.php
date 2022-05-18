@@ -7,8 +7,8 @@
                             <div class="c-pointer " style="display: flex; float:right;" id="close">
                                 <p class="bg_update p-0-12 b-r-100 f-s-30 f-w-900" >&times;</p>
                             </div>
-                            <div class="">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel consequuntur nemo laboriosam quia fugiat quasi id, suscipit distinctio consequatur reprehenderit atque eos, alias qui minus sit quaerat enim maxime aliquid.</p>
+                            <div class="map_display">
+                                <img src="http://127.0.0.1/shoetailor/kicks_files/svgs/adopters-bg.svg">
                             </div>
                         </div>
                     </div>
