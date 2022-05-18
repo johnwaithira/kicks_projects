@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    alert();
+    // alert();
 });
 
 window.onscroll = ()=>{
