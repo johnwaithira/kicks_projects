@@ -1,23 +1,23 @@
     
     <style>
         #viewOnMapdiv
-{
-    animation: zoom_popup 0.7s
-}
-@keyframes zoom_popup
-{
-    from
-    {
-        transform: scale(0);
-    }
-}
-@keyframes zoom_popup_fade
-{
-    from
-    {
-        transform: scale(1);
-    }
-}
+        {
+            animation: zoom_popup 0.7s
+        }
+        @keyframes zoom_popup
+        {
+            from
+            {
+                transform: scale(0);
+            }
+        }
+        @keyframes zoom_popup_fade
+        {
+            from
+            {
+                transform: scale(1);
+            }
+        }
     </style>
     <div  class="w-p-100 hide" id="viewOnMap">
         <div class=" m-a w-p-100" style="top:50px;position: fixed; z-index: 900; " id="viewOnMapdiv">
