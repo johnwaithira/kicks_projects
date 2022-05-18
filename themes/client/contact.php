@@ -15,7 +15,7 @@
                     echo $form::field('number')->value('+254 ')->placeholder('Number');
                     ?>
                     <div class="p-t-3">
-                        <textarea name="" id="" class="h-100 w-p-100 p-10" style="resize: vertical;"></textarea>
+                        <textarea name="" id="textarea" class="h-100 w-p-100 p-10 f-s-17" style="resize: vertical;"></textarea>
                     </div>
                     <div class="btn p-t-30">
                         <button id="contact" type="submit" class="p-15-25 b-one bg-inherit">Get in touch</button>
