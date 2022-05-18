@@ -34,6 +34,10 @@ window.onscroll = ()=>{
 
 }
 
-var map_display = document.querySelector(".map_display");
+var map_display = document.querySelector(
+    ".map_display"
+    );
 
-map_display.style.height = (window.innerHeight - 150) +"px";
+map_display.style.height = (
+    window.innerHeight - 150
+    ) +"px";
