@@ -41,3 +41,10 @@ var map_display = document.querySelector(
 map_display.style.height = (
     window.innerHeight - 150
     ) +"px";
+
+let close_map = document.querySelector("#close");
+let map = document.querySelector("#map");
+map.style.display = "none";
+close_map.addEventListener("click", function(){
+    
+});
