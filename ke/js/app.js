@@ -43,13 +43,36 @@ map_display.style.height = (
     ) +"px";
 
 let close_map = document.querySelector("#close");
-let viewOnMapBTN= document.querySelector("#close");
+let viewOnMapBTN= document.querySelector("#viewOnMapBTN");
 let map = document.querySelector("#viewOnMap");
 map.style.display = "none";
 
+let animation = `
+#viewOnMap
+{
+    animation: zoom_popup 0.7s
+}
+@keyframes zoom_popup
+{
+    from
+    {
+        transform: scale(0);
+    }
+}
+@keyframes zoom_popup_fade
+{
+    from
+    {
+        transform: scale(1);
+    }
+}
+`;
+
+document.body.style = animation;
+
 viewOnMapBTN.addEventListener("click", function(){
-    
+    map.style.display = "block";
 });
 close_map.addEventListener("click", function(){
-    
+    map.style.display = "none";
 });
