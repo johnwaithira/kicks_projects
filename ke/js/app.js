@@ -47,14 +47,15 @@ let viewOnMapBTN= document.querySelector("#viewOnMapBTN");
 let map = document.querySelector("#viewOnMap");
 map.style.display = "none";
 let xmn = document.querySelector("#viewOnMapdiv");
+let blur_div = document.querySelector("#blur");
 
 viewOnMapBTN.addEventListener("click", function(){
     
     xmn.style.animation = " zoom_popup 0.7s";
     map.style.display = "block";
+    blur_div.style.display = "none";
 });
 close_map.addEventListener("click", function(){
     map.style.display = "none"; 
-
 });
 
