@@ -45,14 +45,15 @@ map_display.style.height = (
 let close_map = document.querySelector("#close");
 let viewOnMapBTN= document.querySelector("#viewOnMapBTN");
 let map = document.querySelector("#viewOnMap");
-map.style.display = "none";
 let xmn = document.querySelector("#viewOnMapdiv");
 let blur_div = document.querySelector(".blur");
 
+map.style.display = "none";
+
 removeBlur();
 
-viewOnMapBTN.addEventListener("click", function(){
-    
+viewOnMapBTN.addEventListener("click", function()
+{
     animate();
     map.style.display = "block";
     addBlur();
