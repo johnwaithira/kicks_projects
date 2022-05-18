@@ -1,7 +1,7 @@
 <?php
     
     namespace Waithira\Kicksfootware\Templates;
-    
+    use Waithira\Kicksfootware\Templates\Fields;
     class Form
     {
         public static function begin($action, $method, $params = []): Form
@@ -23,7 +23,7 @@
             </form>";
         }
     
-        public static function field($attribute)
+        public static function field($attribute): Fields
         {
             return new Fields($attribute);
         }
