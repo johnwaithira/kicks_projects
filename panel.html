@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel || Development</title>
+    <link rel="stylesheet" href="http://127.0.0.1/kicksfootware/ke/css/offline/style.css">
+</head>
+<body>
+    <style>
+        button{
+            -webkit-appearance: button;
+
+        }
+        .accordion:after{
+            content: '\2795';
+            float: right;
+        }
+        .panel{
+            overflow: hidden;
+            max-height: 0;
+            transition: 0.2s;
+        }
+
+        .active{
+            background: red;
+        }
+        .active::after{
+            content: '\2796';
+            float: right;
+        }
+    </style>
+   <div class="col-4 m-a">
+      <div class="p-20-0">
+        <div class="box-shadow1 p-20-0">
+            <button class="accordion p-10-20 b-n f-s-16 w-p-100 text-left">
+                Shop
+            </button>
+            <div class="panel p-0-20">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fuga placeat autem consequatur nam, et id fugiat, excepturi tempora animi praesentium aliquid voluptatibus ad repellendus repellat sit aperiam dolorem. Sed.</p>
+            </div>
+        
+            <button class="accordion p-10-20 b-n f-s-16 w-p-100 text-left">
+                Shop
+            </button>
+            <div class="panel p-0-20">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fuga placeat autem consequatur nam, et id fugiat, excepturi tempora animi praesentium aliquid voluptatibus ad repellendus repellat sit aperiam dolorem. Sed.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fuga placeat autem consequatur nam, et id fugiat, excepturi tempora animi praesentium aliquid voluptatibus ad repellendus repellat sit aperiam dolorem. Sed.</p>
+            </div>
+           </div>
+      </div>
+   </div>
+
+   <script>
+       var acc = document.getElementsByClassName("accordion");
+       var i;
+
+        for(i = 0; i<acc.length; i++)
+        {
+            acc[i].addEventListener("click", function(){
+               this.classList.toggle("active");
+               var panel = this.nextElementSibling;
+
+               if(panel.style.maxHeight){
+                   panel.style.maxHeight = null;
+               }
+               else{
+                   panel.style.maxHeight = panel.scrollHeight + "px";
+               }
+               console.log(panel.scrollHeight);
+            })
+
+           
+        }
+   </script>
+</body>
+</html>
