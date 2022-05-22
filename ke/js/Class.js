@@ -1,11 +1,7 @@
-class KicksJS
+class Developer
 {
     constructor() {
+        console.log("My name is John waithira");
     }
-    animation() {
-        console.log(12345678);
-    };
 }
-
-
-let d
+let app = new Developer();

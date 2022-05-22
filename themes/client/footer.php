@@ -172,7 +172,7 @@
                                 <p class="bg_update p-0-12 b-r-100 f-s-30 f-w-900" >&times;</p>
                             </div>
                             <div class="map_display">
-                                <img src="http://127.0.0.1/shoetailor/kicks_files/svgs/adopters-bg.svg">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15955.72097132149!2d36.87882765!3d-1.20891165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1652981171997!5m2!1sen!2ske" width="100%" height="90%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                     </div>

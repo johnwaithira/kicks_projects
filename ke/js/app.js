@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+    alert();
 });
 
 window.onscroll = ()=>{
@@ -99,3 +99,8 @@ function animate()
 {
     xmn.style.animation = " zoom_popup 0.7s";
 }
+
+window.onclick = function(event)
+{
+    alert(event.target)
+  }
